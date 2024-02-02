@@ -11,7 +11,7 @@ function sendData(prams) {
         if (responce.ok) {
             return responce.text();
         } else {
-            return responce.text();
+            return "There has been an error";
         }
     }).then((data) => {
         output.textContent = data;
